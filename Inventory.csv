@@ -1,4 +1,4 @@
-PropertyID;Builder;PropertyName;BHK;Servant Room;Address;Area (sqft);Construction;Rate (INR/Sqft);City;State
+PropertyID;Builder;PropertyName;BHK;ServantRoom;Address;Area;Construction;Rate;City;State
 1;M3M;Golf 79;2.5;No;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
 2;M3M;Golf 79;3.5;No;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
 3;M3M;Golf 79;3.5;Yes;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
