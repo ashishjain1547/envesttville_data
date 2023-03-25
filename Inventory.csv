@@ -1,6 +1,8 @@
-PropertyID;Builder;PropertyName;BHK;Servant Room;Address;Area (sqft);Construction;Date Added
-1;M3M;Golf 79;2.5;No;Sector 79, Gurugram;NA;Underconstruction;2023 03 25
-2;M3M;Golf 79;4.5;Yes;Sector 79, Gurugram;NA;Underconstruction;2023 03 25
-3;M3M;Antalya Hills;2.5;No;Sector 79, Gurugram;835;Underconstruction;2023 03 25
-4;M3M;Antalya Hills;3.5;No;Sector 79, Gurugram;1073;Underconstruction;2023 03 25
-5;Mapsko;Mountville;3;No;Sector 79, Gurugram;1490;Ready to move in;2023 03 25
+PropertyID;Builder;PropertyName;BHK;Servant Room;Address;Area (sqft);Construction;Rate (INR/Sqft);City;State
+1;M3M;Golf 79;2.5;No;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
+2;M3M;Golf 79;3.5;No;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
+3;M3M;Golf 79;3.5;Yes;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
+4;M3M;Golf 79;4.5;Yes;Sector 79, Gurugram;NA;Underconstruction;NA;Gurugram;Haryana
+5;M3M;Antalya Hills;2.5;No;Sector 79, Gurugram;835;Underconstruction;9250;Gurugram;Haryana
+6;M3M;Antalya Hills;3.5;No;Sector 79, Gurugram;1073;Underconstruction;10000;Gurugram;Haryana
+7;Mapsko;Mount Ville;3;No;Sector 79, Gurugram;1490;Ready to move in;8390;Gurugram;Haryana
