@@ -5,72 +5,65 @@
 
 <script src="./read_csv.js"> </script>
 
-<style>
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    td,
-    th {
-        padding: 5px;
-    }
-</style>
+<link rel="stylesheet" href="./styles.css">
 
 <body data-bind='template: { afterRender: getData }'>
-
-
     <table>
         <thead>
-            <th>
-                Sno.
-            </th>
+            <tr>
+                <th>
+                    Sno.
+                </th>
 
-            <th>Builder
-                <br>
-                <input data-bind="value: builderFilterValue, valueUpdate: 'afterkeydown'" />
-            </th>
+                <th>Builder
+                    <br>
+                    <input data-bind="value: builderFilterValue, valueUpdate: 'afterkeydown'" />
+                </th>
 
-            <th>
-                Property Name
-            </th>
+                <th>
+                    Property Name
+                </th>
 
-            <th>
-                BHK <br>
-                <button data-bind="click: bhkSorting">Sort</button>
-            </th>
+                <th>
+                    BHK <br>
+                    <button data-bind="click: bhkSorting">Sort</button>
+                </th>
 
-            <th>
-                Servant Room
-            </th>
+                <th>
+                    Servant Room
+                </th>
 
-            <th>
-                Area (Sqft)
-            </th>
+                <th>
+                    Area (Sqft)
+                </th>
 
-            <th>
-                Construction
-            </th>
+                <th>
+                    Construction
+                </th>
 
-            <th>
-                Rate (INR / Sqft)
-            </th>
+                <th>
+                    Rate (INR / Sqft)
+                </th>
 
-            <th>
-                City
-            </th>
-
+                <th>
+                    City
+                </th>
+            </tr>
         </thead>
+    </table>
+
+    <table>
         <tbody>
             <!-- ko foreach: tableDataList -->
             <tr>
-                <td data-bind="text: $index() + 1"></td>
-                <td data-bind="text: Builder"></td>
+                <td># <span data-bind="text: $index() + 1"></span></td>
+                <td>Builder: <span data-bind="text: Builder"></span></td>
                 <td data-bind="text: PropertyName"></td>
-                <td data-bind="text: BHK"></td>
-                <td data-bind="text: ServantRoom"></td>
-                <td data-bind="text: Area"></td>
+                <td>BHK: <span data-bind="text: BHK"></span></td>
+                <td>Servant's Room: <span data-bind="text: ServantRoom"></span></td>
+                <td>Area (Sqft): <span data-bind="text: Area"></span></td>
                 <td data-bind="text: Construction"></td>
-                <td data-bind="text: Rate"></td>
+                <td>Rate (Rs/Sqft): <span data-bind="text: Rate"></span></td>
                 <td data-bind="text: City"></td>
             </tr>
             <!-- /ko -->

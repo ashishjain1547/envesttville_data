@@ -1,0 +1,17 @@
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td, th {
+    padding: 5px;
+}
+
+tbody > tr {
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+}
+
+td {
+    display: block;
+}
