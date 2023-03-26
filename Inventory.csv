@@ -1,10 +1,10 @@
-PropertyID;Builder;PropertyName;BHK;ServantRoom;Address;Area;Construction;Rate;City;State
-1;M3M;Golf 79;2.5;No;Sector 79, Gurugram;1420;Underconstruction;8999;Gurugram;Haryana
-2;M3M;Golf 79;3.5;No;Sector 79, Gurugram;1902;Underconstruction;8999;Gurugram;Haryana
-3;M3M;Golf 79;3.5;Yes;Sector 79, Gurugram;2090;Underconstruction;8999;Gurugram;Haryana
-4;M3M;Golf 79;4.5;Yes;Sector 79, Gurugram;2636;Underconstruction;8999;Gurugram;Haryana
-5;M3M;Antalya Hills;2.5;No;Sector 79, Gurugram;835;Underconstruction;9250;Gurugram;Haryana
-6;M3M;Antalya Hills;3.5;No;Sector 79, Gurugram;1073;Underconstruction;10000;Gurugram;Haryana
-7;Mapsko;Mount Ville;3;No;Sector 79, Gurugram;1490;Ready to move in;8390;Gurugram;Haryana
-8;Mapsko;Casa Bella;2.5;No;Sector 82, Gurugram;1430;Ready to move in;5700;Gurugram;Haryana
-9;Godrej;Aria;2;No;Sector 79, Gurugram;1331;Ready to move in;8800;Gurugram;Haryana
+PropertyID;Builder;PropertyName;BHK;ServantRoom;Address;Area;Construction;Rate;City;State;ImageSrc
+1;M3M;Golf 79;2.5;No;Sector 79, Gurugram;1420;Underconstruction;8999;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/M3M%20Golf%2079/1.png
+2;M3M;Golf 79;3.5;No;Sector 79, Gurugram;1902;Underconstruction;8999;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/M3M%20Golf%2079/2.png
+3;M3M;Golf 79;3.5;Yes;Sector 79, Gurugram;2090;Underconstruction;8999;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/M3M%20Golf%2079/3.png
+4;M3M;Golf 79;4.5;Yes;Sector 79, Gurugram;2636;Underconstruction;8999;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/M3M%20Golf%2079/4.png
+5;M3M;Antalya Hills;2.5;No;Sector 79, Gurugram;835;Underconstruction;9250;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/M3M%20Antalya%20Hills/1.png
+6;M3M;Antalya Hills;3.5;No;Sector 79, Gurugram;1073;Underconstruction;10000;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/M3M%20Antalya%20Hills/2.png
+7;Mapsko;Mount Ville;3;No;Sector 79, Gurugram;1490;Ready to move in;8390;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/Mapsko%20Mount%20Ville/1.jpg
+8;Mapsko;Casa Bella;2.5;No;Sector 82, Gurugram;1430;Ready to move in;5700;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/Mapsko%20Casabella/1.jpeg
+9;Godrej;Aria;2;No;Sector 79, Gurugram;1331;Ready to move in;8800;Gurugram;Haryana;https://raw.githubusercontent.com/ashishjain1547/envesttville_data/main/Images/Godrej%20Aria/1.jpg
