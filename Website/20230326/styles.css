@@ -1,6 +1,3 @@
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
 
 td, th {
     padding: 5px;
@@ -9,7 +6,15 @@ td, th {
 tbody > tr {
     display: inline-block;
     width: 320px;
+    height: 585px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+td.customImg {    
     height: 320px;
+    background-size: 320px 330px;
 }
 
 td {
