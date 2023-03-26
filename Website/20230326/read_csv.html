@@ -22,6 +22,8 @@
 
                 <th>
                     Property Name
+                    <br>
+                    <input data-bind="value: propertyFilterValue, valueUpdate: 'afterkeydown'" />
                 </th>
 
                 <th>
@@ -35,18 +37,26 @@
 
                 <th>
                     Area (Sqft)
+                    <br>
+                    <button data-bind="click: areaSorting">Sort</button>
                 </th>
 
                 <th>
                     Construction
+                    <br>
+                    <input data-bind="value: constructionFilterValue, valueUpdate: 'afterkeydown'" />
                 </th>
 
                 <th>
                     Rate (INR / Sqft)
+                    <br>
+                    <button data-bind="click: rateSorting">Sort</button>
                 </th>
 
                 <th>
                     City
+                    <br>
+                    <input data-bind="value: cityFilterValue, valueUpdate: 'afterkeydown'" />
                 </th>
             </tr>
         </thead>
@@ -129,6 +139,52 @@
             }
         });
 
+        this.propertyFilterValue = ko.observable();
+        this.propertyFilterArray = ko.computed(function () {
+            var propertyNameFilter = self.propertyFilterValue();
+            self.tableDataList([]);
+            if (!propertyNameFilter || propertyNameFilter === "") {
+                self.tableDataList(self.FilterTblGridArr());
+            } else {
+                var data = ko.utils.arrayFilter(self.FilterTblGridArr(), function (elem) {
+                    return elem.PropertyName().toLowerCase().indexOf(propertyNameFilter.toLowerCase()) !== -1;
+                });
+                self.tableDataList(data);
+            }
+        });
+
+        this.constructionFilterValue = ko.observable();
+        this.constructionFilterArray = ko.computed(function () {
+            var constructionNameFilter = self.constructionFilterValue();
+            self.tableDataList([]);
+            if (!constructionNameFilter || constructionNameFilter === "") {
+                self.tableDataList(self.FilterTblGridArr());
+            } else {
+                var data = ko.utils.arrayFilter(self.FilterTblGridArr(), function (elem) {
+                    return elem.Construction().toLowerCase().indexOf(constructionNameFilter.toLowerCase()) !== -1;
+                });
+                self.tableDataList(data);
+            }
+        });
+
+        
+
+        this.cityFilterValue = ko.observable();
+        this.cityFilterArray = ko.computed(function () {
+            var cityFilter = self.propertyFilterValue();
+            self.tableDataList([]);
+            if (!cityFilter || cityFilter === "") {
+                self.tableDataList(self.FilterTblGridArr());
+            } else {
+                var data = ko.utils.arrayFilter(self.FilterTblGridArr(), function (elem) {
+                    return elem.City().toLowerCase().indexOf(cityFilter.toLowerCase()) !== -1;
+                });
+                self.tableDataList(data);
+            }
+        });
+
+
+
         this.isBHKSortingOrder = ko.observable(true);
         this.bhkSorting = function () {
             var data = self.tableDataList();
@@ -146,6 +202,49 @@
                     return (aID === bID) ? 0 : (aID > bID) ? -1 : 1;
                 });
                 self.isBHKSortingOrder(true);
+            }
+            self.tableDataList(data);
+        };
+
+
+        this.isAreaSortingOrder = ko.observable(true);
+        this.areaSorting = function () {
+            var data = self.tableDataList();
+            if (self.isAreaSortingOrder()) {
+                data.sort(function (a, b) {
+                    var aID = parseFloat(a.Area());
+                    var bID = parseFloat(b.Area());
+                    return (aID === bID) ? 0 : (aID > bID) ? 1 : -1;
+                });
+                self.isAreaSortingOrder(false);
+            } else {
+                data.sort(function (a, b) {
+                    var aID = parseFloat(a.Area());
+                    var bID = parseFloat(b.Area());
+                    return (aID === bID) ? 0 : (aID > bID) ? -1 : 1;
+                });
+                self.isAreaSortingOrder(true);
+            }
+            self.tableDataList(data);
+        };
+
+        this.isRateSortingOrder = ko.observable(true);
+        this.rateSorting = function () {
+            var data = self.tableDataList();
+            if (self.isRateSortingOrder()) {
+                data.sort(function (a, b) {
+                    var aID = parseFloat(a.Rate());
+                    var bID = parseFloat(b.Rate());
+                    return (aID === bID) ? 0 : (aID > bID) ? 1 : -1;
+                });
+                self.isRateSortingOrder(false);
+            } else {
+                data.sort(function (a, b) {
+                    var aID = parseFloat(a.Rate());
+                    var bID = parseFloat(b.Rate());
+                    return (aID === bID) ? 0 : (aID > bID) ? -1 : 1;
+                });
+                self.isRateSortingOrder(true);
             }
             self.tableDataList(data);
         };
